@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mein Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Mein Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Über mich</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projekte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2></h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img" src="img/bild1.png" alt="Mein Bild" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h3>Willkommen auf meinem Portfolio!</h3>
+          <p>Mein Name ist Nick und ich mache im Moment eine Ausbildung zum technischen Assistenten für IT. Mein Ziel ist es, Fachinformatiker im Bereich Anwendungsentwickler zu werden.</p>
+          <p>Auf dieser Seite kannst du alle meine Kenntnisse und Projekte sehen, an denen ich arbeite oder gearbeitet habe oder mitwirke.</p>
+          <p>Ich bin immer auf der Suche nach neue Projekte und Möglichkeiten mich zu verbessern, bei Interesse kontaktieren sie mich bitte mit den Kontakt daten, die sie unten finden werden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2><u>Kenntnisse</u></h2>
+      <br>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20">
+        <!-- Example Card 1 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg card">
+          <img class="w-full" src="img/stade.png" alt="Project 1">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Programmiersprachen</div>
+            <div class="accordion" id="programming-languages-accordion">
+              <div class="card">
+                <div class="card-header" id="java-heading">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#java-collapse" aria-expanded="true" aria-controls="java-collapse">
+                      Java
+                    </button>
+                  </h5>
+                </div>
+                <div id="java-collapse" class="collapse" aria-labelledby="java-heading" data-parent="#programming-languages-accordion">
+                  <div class="card-body">
+                    <ul class="text-gray-700 text-base">
+                      <li>Grundlagen OOP</li>
+                      <li>Vererbung</li>
+                      <li>Klassendiagramm</li>
+                      <li>Objektdiagramm</li>
+                      <li>Struktogramm</li>
+                      <li>Aktivitätsdiagramm</li>
+                      <li>Use Case Diagramm</li>
+                      <li>Pseudocode</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="databases-heading">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#databases-collapse" aria-expanded="false" aria-controls="databases-collapse">
+                      Datenbanken & SQL
+                    </button>
+                  </h5>
+                </div>
+                <div id="databases-collapse" class="collapse" aria-labelledby="databases-heading" data-parent="#programming-languages-accordion">
+                  <div class="card-body">
+                    <ul class="text-gray-700 text-base">
+                      <li>Einfache Abfragen</li>
+                      <li>SQL Joins</li>
+                      <li>ERM</li>
+                      <li>RM</li>
+                      <li>Normalisierung</li>
+                      <li>Datenbankschema</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Example Card 2 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg card">
+          <img class="w-full" src="img/Dobbelpunkt.png" alt="Project 2">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Netzwerktechnik und Systemintegration</div>
+            <div class="accordion" id="network-tech-accordion">
+              <div class="card">
+                <div class="card-header" id="networking-heading">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#networking-collapse" aria-expanded="true" aria-controls="networking-collapse">
+                      Netzwerktechnik
+                    </button>
+                  </h5>
+                </div>
+                <div id="networking-collapse" class="collapse" aria-labelledby="networking-heading" data-parent="#network-tech-accordion">
+                  <div class="card-body">
+                    <ul class="text-gray-700 text-base">
+                      <li>OSI-Modell</li>
+                      <li>Netzwerktopologien</li>
+                      <li>KKNF/KDNF</li>
+                      <li>MAC Adressen</li>
+                      <li>DHCP</li>
+                      <li>IPv4</li>
+                      <li>Subnetting</li>
+                      <li>Routing</li>
+                      <li>Switche</li>
+                      <li>Namensauflösung</li>
+                      <li>TCP- & UDP-Ports</li>
+                      <li>IPv6</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2><u>Projekte</u></h2>
+      <br>
+      <h5>Hier findest du mein Github mit Projekten</h5>
+      <br>
+      <a href="https://github.com/Inhorni">
+        <button class="btn-19">
+        <span class="text-container">
+        <span class="text">Github
+        </span>
+        </span>
+      </button>
+    </div>
+</a>
+  </section>
+
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2><u>Kontakt</u></h2>
+    <p>Discord: Inori#7132</p>
+    <p>E-mail:nickstettnisch@gmail.com</p>
+  </div>
+</section>
+<footer class="py-3 text-center bg-dark text-white">
+  <div class="container">
+    &copy; 2023 Portfolio Nick
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
